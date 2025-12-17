@@ -1,0 +1,3337 @@
+[
+    {
+        "schema": "dbo",
+        "table_name": "AC_Feature_Setting",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "AC_Journal_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "AC_Journal_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "AC_Ledger",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "AC_Primary_Group",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "AC_Secondary_Group",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "AC_Sup_Bill_Entry",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "AC_Voucher_Type",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Ac_Main_Group",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Dep_Indent_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Dep_Indent_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Bill",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Bill_25072025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Bill_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Bill_Details_25072025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Direct_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Direct_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Indent_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Indent_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Indent_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Indent_Summary_01092025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Indent_Summary_27082025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Indent_Summary_29082025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Order_details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Order_main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Order_main_281224",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Quo_Comparision",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Quo_Enquiry",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Quo_Receipt",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Receipt_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Receipt_Detail_01092025",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Receipt_Detail_25072025",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Receipt_Detail_Summary",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Receipt_Main_25072025",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Return",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Return_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accessories_Pur_Serviece_Bill_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accounts_Tally",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accounts_Tally_New",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Accounts_Tally_New_15092025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Approval_Rate_History",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Audit_Logs",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Bank_Charges",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Bank_Contra",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Barcode_Generation",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Budget_Rate_History",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "CartonWise_Despatch",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Cash_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Cash_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Cheque_Book_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Cheque_Book_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "DashboardDynamicColNames",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_FP_Inspection",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Inspection_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Inspection_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Inspection_Main_04_07_2025",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Inspection_Pack_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Invoice_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Invoice_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Order_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Order_Details_04_07_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Order_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Order_Services_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Order_Yarn_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Receipt_Main_04_07_2025",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Receipt_Main_30_05_2025",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Dyeing_Receipt_Pack_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Empty_Beam_Delivery",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "FG_Inhouse_Process_Entry_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "FG_Inhouse_Process_Entry_Employeewise_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "FG_Inhouse_Process_Entry_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "FG_Inhouse_Wages_Preparation_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "FG_Inhouse_Wages_Preparation_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "FabCos_Jobwork_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "FabCos_Yarn_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Fab_Lot_Generation",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Fab_Stock_Adjustment",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Feature_Setting",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Feature_Setting_Department",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "GST_Port",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "GST_State",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "GatePass_Employee",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "GatePass_Mat_IN_OUT_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "GatePass_Mat_Inward_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "GatePass_Mat_Outward_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "GatePass_visitors",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "HR_Educational_Qualification",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "HR_Employee_Language_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Hr_Emp_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Hr_Emp_Machine_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Hr_emp_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Invoice_Opening_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Invoice_Services_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Expected_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Expected_Summary_10_7",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_FP_Inspection",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_FP_Inspection_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Fabric_Invoice",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Fabric_Invoice_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Fabric_Invoice_Services_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Fabric_Order_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Fabric_Order_Details_0432025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Fabric_Order_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Fabric_Order_Main_21032025",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Order_Accessories_Req_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Order_Accessories_Req_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "JW_Wastage_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Jw_Expected_Delivery",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Jw_Fabric_Return_details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Jw_Order_Expected_Accessories",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Log_Last_Sync_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mad_Stock_Adjustment",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mad_Stock_Adjustment_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mass_Balance_Allotment",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_AccCategory",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Accessories_Style_Details",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Accessories_Style_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Approval_List",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Billno",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Billno_Temp",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Color",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Company_Unit",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Count",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Department",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Design",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Hsn_Code",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_JobSupplierDetail",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Make",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Material_Detail",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Material_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Msg_Notification_Entry",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Msg_Types",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Narration",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Tax_Sales_Configuration",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Trade_Name",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_WarehouseLocation_Details",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_WarehouseLocation_Details_Temp",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_WarehouseLocation_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Yarn_PackageType",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Master_Yarn_Parameter",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mill_Master",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mill_Master_Details",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mill_Master_Rate_History",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Boiler_Compressor_Log_Entry",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Breakdown_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_EB_Service_Power_Reading",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Eb_Reg",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Genset_Entry",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Maintanance_Schedule_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Maintanance_schedule",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Maintenance_Entry_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Maintenance_Entry_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Master_Machine",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Master_Machine_No",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Master_Machine_Spares",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Task_Group",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Task_Registration",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Task_Sub_Group",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Transformer_Logbook",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Transformer_Power_Reading_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Mntc_Vehicle_Log_Entry",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Inspection_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Inspection_Detail_06_05",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Inspection_Detail_29_04",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Inspection_main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Poly_Carton",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Poly_Carton_Hour_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Poly_Carton_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Poly_Carton_Wages_Preparation_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Poly_Carton_Wages_Preparation_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Rate",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Packing_Rate_Party",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Path",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Pattern_Color_List",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Pattern_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Pattern_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Pattern_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Product_Cost_Temp",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Production_Expenses_Datewise_Summery",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_General_Bill_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_General_Bill_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Jobwork_Ord_Rate_Change_Request",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Bill_Receipt_Details_New",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Bill_Receipt_Main_New",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Bill_Receipt_Services_Details_New",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Inspection_BagWise_Details_New",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Inspection_Details_New",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Inspection_Main_New",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Order_Details_New",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Order_Main_New",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Receipt_Bag_Details_New",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Receipt_Details_New",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Receipt_Main_New",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Return_Details_New",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Purchase_Yarn_Return_Main_New",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "RBL_FIN_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "RBL_FIN_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "RBL_Gen_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "RBL_Gen_Detail_3032025",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "RBL_Gen_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "RBL_Gen_Main_3032025",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "RBL_Gen_PCS_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "RBL_Gen_PCS_Detail_3032025",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "RBL_Gen_Services_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Receipt_Adjustment_Deduction_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Receipt_Adjustment_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Receipt_Adjustment_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Reject_Rework_Reasons",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Requirement_ColorYarn_Purchase",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Requirement_KoraYarn_Purchase",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Requirement_KoraYarn_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Requirement_Yarn_Dyeing",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Requirement_Yarn_Exess_Allot_Log",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Requirement_Yarn_Purchase_Stock",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Requirement_Yarn_Stock_Dyeing",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Requirement_Yarn_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "STOCK_BAG_DETAILS_30_08_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "SalesReturn_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "SalesReturn_Details_22092023",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "SalesReturn_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Bill_Receipt",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Bill_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Ord_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Ord_Details_16042025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Ord_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Ord_Yarn_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Ord_Yarn_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Settlement",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Warping_Prodn_Design_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Warping_Prodn_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Siz_Warping_Prodn_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Sizing_Allotment_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Sizing_Allotment_Main_10092024",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Sizing_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Sizing_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Acc_Transfer_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Acc_Transfer_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Acc_Transfer_Main_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Accessories_Delivery",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Accessories_Delivery_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Accessories_Delivery_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Accessories_Receipt",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Bag",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Bag_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Bag_Details_16_07_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Bag_Details_Temp",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Bag_Temp",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Bag_Transaction",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Beams",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Fabric_Opening_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Fabric_Opening_Details_Pcs",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Fabric_Opening_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Fabric_Transaction",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Fabric_Transfer_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Fabric_Transfer_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Fabric_Transfer_Main_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Loom",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Transfer_Allotment_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Transfer_Allotment_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Yarn_Opening_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Yarn_Opening_Details_Old",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Yarn_Opening_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Yarn_Opening_Main_Old",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Yarn_Transfer_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Yarn_Transfer_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_Yarn_Transfer_Main_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_jw_Delivery_Designwise_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_jw_Delivery_Pcs_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stock_jw_Receipt_Pcs_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stores_FP_Inspection",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stores_FP_Inspection_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stores_Indent_Return",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stores_Indent_Return_08_08_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stores_Stock_Adjustment",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Stores_Stock_Adjustment_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Super_Admin_Department_Wise_Amount_Fixation",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Accessories_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Accessories_Stock_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Accessories_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Accessories_Summary_Excess_Log",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Details26082023",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Process",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Process_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Process_Details_04_07",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Process_Details_10_07",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Process_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Process_Summary26082023",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Process_Summary_07012025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Purchase_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Purchase_Summary_20625",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Purchase_Summary_23725",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Stock_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Fabric_Summary_Excess_Log",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Jobwork_Delivery",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Jobwork_Delivery26082023",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Jobwork_Delivery_9725",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Mad_Inhouse_Process_Rate",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Mad_Inhouse_Process_Rate_Party",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Mad_Jw_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Mad_Pur_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Mad_Stitch_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Mad_Stock_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_PackMaterial_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_PackMaterial_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_PackingMaterial_Summary_Excess_Log",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_PreBudget_Expenses",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_PreBudget_Expenses_XXX",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Weaving",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Weaving_14092024",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Allot_Weaving_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_AutomaticIntegration",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Courier_Rate",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Courier_Rate_KG_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Dashboard_Processwise_UserRights",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Despatch_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Despatch_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Fabric_Packing_List",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Grade_Master",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_IE_Master_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_IE_Master_Sub_Process_Details",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Inh_Prodn_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Inh_Prodn_Hour_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Inh_Prodn_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Inh_Prodn_Pcs_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Invoice_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Invoice_Details_27082024",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Invoice_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Invoice_Main_19092024",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Invoice_Main_20092024",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Invoice_Main_BfSAlestype",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Invoice_Main_Taxwise",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Invoice_Main_Workorderwise",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Invoice_Service_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Bank",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Beam",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_BuyerAgent",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_BuyerCertification",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_BuyerConsignee",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_BuyerNominatedVendors",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_BuyerNotify",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_BuyerProducts",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Buyer_Quality",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_CMP",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_CMP_Brand",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_CMP_Depart_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Cat",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Cat_22_10",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_City",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Country",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Cur",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Cur_His",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Design_PegPlan",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_District",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Doffing_Pipe",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Exp",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Fab_Qual",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Fab_ReedPick",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Fab_ReedPick_Warp_Weft_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Fabric_Defects",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Gen_Add",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Group",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Group_22_10",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_ISO",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Loom",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Loom_Type",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Loom_Weaving",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Mat",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Pack_Mat_Size",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Party",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Party_16122024",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Party_232023",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Party_MBranch_Block_History",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Party_Marketingbranch",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Prebudget_Expenses_Fixation",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Pro",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Pro_16_07",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Pro_Flow",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Pro_Prod_Inhouse_fixation",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Prod",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Prod_Color",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Prod_Model",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Prod_Service",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Prod_Size",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_ProductNo_FabricDetails",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_ProductNo_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_ProductNo_TrimPM_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Product_Purchase_Rate_History",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Product_Purchase_Ratechart",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_RateChartName",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_RateChart_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_RateChart_History",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_RateChart_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_State",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Stores_Cat",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Stores_Group",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Style_Det",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Style_Det26082023",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Style_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Sub_Group",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Sub_Pro",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Tax",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Tax_TCS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Tax_TDS_Fixation",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Termsconditions",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Unit",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Unit_Type",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Users_Process",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Vehicle_Registration",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Warehouse",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Yarn_Qual",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_Yarn_Type",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_M_jw_process_Ratechart",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Master_Test",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Master_Test_Details",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Agents",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Det",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Main_20092024",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Main_Comp_Status",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Mass_Balance",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Services_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Summary_251223",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Summary_26923",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Summary_31012024",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Ord_Summary_taxable_Amt",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_PackingList_Stock_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Packing_List_Carton_List",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Packing_List_Det",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Packing_List_Det_27012024",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Packing_List_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Packing_List_Main_19092024",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Packing_List_Main_20092024",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Payment_Voucher_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Payment_Voucher_Details_Orderwise",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Payment_Voucher_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Payment_Voucher_Modeof_Pay",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Picture_Path",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Planning_12032025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Planning_Log",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Planning_Template",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Planningxxxx",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pro_Invoice",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pro_Invoice_TotalValue",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pro_invoice_ord_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Prodn_Plan_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Prodn_Plan_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Bill_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Bill_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Bill_Receipt_Orderwise",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Bill_Receipt_Services_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_FPI_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_FPI_Test_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Inspection_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Inspection_Details_Pcs",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Inspection_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Inspection_Mistake",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Ord_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Ord_Details_02092024",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Ord_Details_07082023",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Ord_Details_2092024",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Ord_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Receipt_Details_23725",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Receipt_Details_24042024",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Receipt_Details_24_07",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Receipt_Details_28012025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Receipt_Details_Pcs",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Receipt_Details_Pcs_24042024",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Return_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Fab_Return_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_FPI_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_FPI_Test_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_Inspection_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_Inspection_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_Ord_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_Ord_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_Return_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Pur_Mad_Return_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Purchase_Invoice_Tax",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Basic_Rate_History_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Discount_Buyerwise_Additional_Detail_WS",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Discount_Buyerwise_Additional_Main_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Discount_Buyerwise_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Gift_Offer_Fixation_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Gift_Offer_Gift_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Gift_Offer_Main_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Gift_Offer_Product_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Goods_Forwarding_Note",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Incentive_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Incentive_Main_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Incentive_Marketing_Branch_Fixation",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Invoice_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Invoice_Main_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Invoice_Service_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Order_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Order_Main_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Packing_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Packing_Main_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Packing_Pcs_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Rate_Chart_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Rate_Chart_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Retail_Invoice_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Retail_Invoice_Main_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Retail_return_Service_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Return_Details_WS",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Return_Main_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Scheme_Master_Details_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sales_Scheme_Master_WS",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sewing_Line_Delivery",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Sewing_OwnUnit_Master",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Status_Master",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Fab_Inward_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Fab_Inward_Details_070225",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_DirectStock_InHouse",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_Inward_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_Inward_Details_06_05",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_Inward_Details_26_09",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_Transaction",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_Transaction_06_05",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_Transaction_29_04",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_Transfer_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_Transfer_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Stock_Mad_Transfer_Main_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_TexTest_Inward_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_TexTest_Inward_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Vou_Advance_Note",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Vou_Advance_Note_Ded_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Vou_Credit_Note",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Vou_Credit_Note_Ded_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Vou_Credit_Note_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Vou_Debit_Note",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Vou_Debit_Note_Ded_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Vou_Debit_Note_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_Vou_TDS_Ded_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_allot_stk_jw_process_delivery_details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_allot_stk_jw_process_details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "T_allot_stk_jw_process_main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Table_FK_constratints",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Task_Status_Entry",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Temp_Start_To_End_Mtr",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Time_And_Action_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Time_And_Action_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Delivery_Designwise_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Delivery_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Delivery_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Delivery_Pcs_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Despatch",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_Details_12_11_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_Details_18_10",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_Mistake",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_Mistake_18092025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_Pcs_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_Pcs_Details_12_11_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_Pcs_Details_18_10",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_main_12_11_2025",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Inspection_main_18_10",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Receipt_Pcs_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Fabric_Unprocess_Designwise_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Delivery_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Delivery_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Delivery_Pcs_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Details_18092025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Details_18_10",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Details_29_10_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Main_18092025",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Main_29_10_2025",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Pcs_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Pcs_Details_18092025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Pcs_Details_18_10",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_Pcs_Details_29_10_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Inspection_main_18_10",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Madeups_Receipt_Pcs_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Yarn_Delivery_Designwise_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Yarn_Delivery_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Yarn_Delivery_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Warehouse_Yarn_Delivery_Pack_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Weaving_Order_Beam_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Weaving_Order_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Weaving_Order_Details_22_07_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Weaving_Order_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Weaving_Order_Req_Beam_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Weaving_Order_Yarn_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Weaving_Order_Yarn_Details_31082024",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Weaving_Order_Yarn_Summary",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wholesale_MRP_Template",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Allotment_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Allotment_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Bill_Receipt",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Bill_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Delivery_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Delivery_Pack_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Delivery_details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Receipt_Pack_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Return_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Return_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Winding_Return_Pack_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Workorder_Yarn_Requirement",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Ac_Settlement",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Bill_Receipt",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Bill_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Bill_Receipt_Services_Detail",
+        "priority": 2
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_FP_Inspection",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Insp_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Insp_Pack_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Insp_main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Inspection_Mistake",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_LoomProdn_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_LoomProdn_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Loom_Allotment_Beam_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Loom_Allotment_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Loom_Allotment_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Loom_Gating_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Rec_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Rec_Pack_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Receipt_ReturnReceipt_main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Return_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Return_main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Sized_Beam_Delivery",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Yarn_Ret_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Yarn_Ret_Pack_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Yarn_Ret_Pack_details_06092025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_Yarn_Return_main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "Wvg_loomProdn_Beam_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "YarnMaster",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "ac_ledger_6323",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "fab_Stock_Adjustment_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "fabcos_summary_details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "pattern_draft_details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_JW_FP_Inspection_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_JW_FP_Inspection_details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_JW_Invoice_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_JW_Invoice_main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_bag_Details_16082025_sb",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_jw_Delivery_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_jw_Delivery_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_jw_Receipt_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_jw_Receipt_Details_10_02_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_jw_Receipt_Main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_jw_order_details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "stock_jw_order_main",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "t_m_party_6323",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "t_ord_main_Pre_Budget_Comp_Status_update",
+        "priority": 1
+    },
+    {
+        "schema": "dbo",
+        "table_name": "t_planning",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "t_planning_03_03_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "t_planning_04_02_2025",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "t_planning_09_04_2025_1315",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "wvg_Loom_Gating_Details",
+        "priority": 3
+    },
+    {
+        "schema": "dbo",
+        "table_name": "yarn_test_Norms",
+        "priority": 3
+    }
+]

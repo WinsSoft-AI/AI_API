@@ -1,11 +1,26 @@
 from pydantic import BaseModel
-from typing import Dict, List, Union, Any
+from typing import Dict, List, Union, Any, Optional
+
+
+class VectorRequest(BaseModel):
+    user_query: str
+
+class VectorResponse(BaseModel):
+    selected_tables: List[str]
+
 
 class SQLRequest(BaseModel):
     user_api_key: str
     user_query: str
     table_schema: dict[str, list[str] | dict]
-    model_id: str
+    model_id: str = "deepseek-coder-v2:16b"
+
+
+class RefineSQLRequest(BaseModel):
+    generated_sql: str
+    error_message: str
+    table_schema: Union[Dict[str, List[str]], Dict[str, Any], List[str], str]
+    model_id: str = "deepseek-coder-v2:16b"
 
 
 class SQLResponse(BaseModel):

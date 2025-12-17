@@ -3,3 +3,6 @@ uvicorn
 python-dotenv
 ollama
 requests
+sentence-transformers
+faiss-cpu
+numpy
