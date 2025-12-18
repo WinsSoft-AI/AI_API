@@ -98,13 +98,34 @@ def needs_detail_table(query: str) -> bool:
     return any(k in q for k in DETAIL_KEYWORDS)
 
 
+import re
+
+def extract_sql_only(text: str) -> str:
+    text = text.strip()
+
+    # Remove leading "sql" or markdown artifacts
+    text = re.sub(r"^sql\s*", "", text, flags=re.IGNORECASE)
+
+    # Remove markdown code blocks if any
+    text = re.sub(r"```sql|```", "", text, flags=re.IGNORECASE)
+
+    # Extract first SELECT statement only
+    match = re.search(r"(select[\s\S]*?;)", text, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+
+    # Fallback: return text if it starts with SELECT
+    if text.lower().startswith("select"):
+        return text.splitlines()[0]
+
+    return ""
 
 
 # ---------------- ENDPOINT ----------------
 @router.post("/generate-sql", response_model=SQLResponse)
 async def generate_sql_endpoint(request: SQLRequest):
     start_time = time.time()
-
+    print(f" Received User request: {request.user_query}")
     # 1. Detect Module
     module = INTENT_PARSER.get_intent(request.user_query)
     if not module:
@@ -150,7 +171,9 @@ async def generate_sql_endpoint(request: SQLRequest):
         model=request.model_id
     )
 
-    sql = resp.get("query", "").strip()
+    raw_sql = resp.get("query", "")
+    sql = extract_sql_only(raw_sql)
+
 
     # 7. Apply Role Filter AFTER SQL generation
     role_filter = INTENT_PARSER.detect_role_filter(request.user_query)
@@ -159,14 +182,13 @@ async def generate_sql_endpoint(request: SQLRequest):
             sql += f" AND {role_filter}"
         else:
             sql += f" WHERE {role_filter}"
+    
+    # print(sql)
+
 
     # 8. SQL SAFETY GUARD
     if not sql.lower().startswith("select"):
         sql = f"SELECT TOP 100 * FROM {main_table['schema']}.{main_table['table_name']}"
-    
-
-    print(sql)
-
     
 
     # 9. Column Validation (Schema Guard)

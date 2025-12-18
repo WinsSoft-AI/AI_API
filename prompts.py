@@ -50,10 +50,12 @@ def build_sql_prompt(user_query: str, table_schema):
         EXTRACT(), INTERVAL, DATE_SUB(), LIMIT
         8. Use TOP instead of LIMIT when required
         9. Use correct GROUP BY rules for aggregate queries
+        10. Use only the column names provided in the schema
+        11. For time-based queries, ALWAYS use date-range filtering with DATEADD + DATEDIFF and NEVER use YEAR() or MONTH() comparisons.
+
 
         DATE LOGIC RULES
-        - For “last month”, “this month”, etc., prefer date-range filtering using:
-        DATEADD + DATEDIFF
+        - For “last month”, “this month”, etc., prefer date-range filtering using DATEADD + DATEDIFF
         - Do NOT apply YEAR() or MONTH() to non-date values
 
         SCHEMA (AUTHORITATIVE — DO NOT QUESTION)
@@ -72,19 +74,46 @@ def build_sql_prompt(user_query: str, table_schema):
 
 
 
-def build_text_prompt(user_query: str, retrieved_data: Dict[str, Any]) -> str:
+def build_text_prompt(user_query: str, retrieved_data: Dict[str, Any], is_truncated: bool = False) -> str:
     """
     Builds a strict-schema insight engine prompt.
     
     user_query: str
-       The natural-language business question.
-    
     retrieved_data: dict
-       The JSON dictionary returned by your backend (query results).
+    is_truncated: bool (If true, warn LLM that data is partial)
     """
 
     # Convert dict to pretty JSON (no extra quotes)
     data_json_str = json.dumps(retrieved_data, indent=2)
+    
+    # Check for Empty Data
+    is_empty = False
+    if not retrieved_data:
+        is_empty = True
+    elif isinstance(retrieved_data, list) and not retrieved_data:
+        is_empty = True
+    elif isinstance(retrieved_data, dict):
+        # If specific "results" key exists, check if THAT is empty
+        if "results" in retrieved_data:
+             if not retrieved_data["results"]:
+                 is_empty = True
+        # If just a plain dict with keys, it's NOT empty (handled by first 'if not retrieved_data')
+    
+    # Debug print to confirm status
+    # print(f"DEBUG: Data Valid? {not is_empty} (Input: {str(retrieved_data)[:50]}...)")
+
+    truncation_note = ""
+    if is_truncated:
+        truncation_note = "(NOTE: This data is TRUNCATED. It only shows the top rows.)"
+
+    empty_instruction = ""
+    if is_empty:
+        empty_instruction = """
+        CRITICAL: The dataset is EMPTY. 
+        - State clearly that "No detailed records were found for this specific query."
+        - Provide a generalized explanation or context about what this data usually represents (e.g., "Sales orders typically track customer demand...").
+        - Do NOT make up specific numbers.
+        """
 
     prompt = f"""
         You are an enterprise ERP business insight engine.
@@ -92,15 +121,21 @@ def build_text_prompt(user_query: str, retrieved_data: Dict[str, Any]) -> str:
         USER QUERY:
         "{user_query}"
 
-        DATA (AUTHORITATIVE, DO NOT QUESTION):
+        DATA STATUS:
+        {'[EMPTY DATASET]' if is_empty else '[DATA VALID]'}
+        {truncation_note}
+
+        DATA (AUTHORITATIVE):
         {data_json_str}
+
+        {empty_instruction}
 
         OUTPUT FORMAT (STRICT JSON ONLY):
         {{
-        "insight": "<2–3 lines describing what the data shows>",
-        "greeting": "<1 line encouraging or neutral progress message>",
+        "insight": "<2–3 lines. If empty, explain why/generic context. If valid, analyze data.>",
+        "greeting": "<Polite message. E.g., 'No records found' or 'Here is your summary'>",
         "suggestions": ["<action 1>", "<action 2>", "<action 3>"],
-        "evidence": ["<key:value from data>", "..."],
+        "evidence": ["<key:value from data>", "..."] (Leave empty if no data),
         "confidence": <number between 0 and 1>
         }}
 
@@ -108,14 +143,6 @@ def build_text_prompt(user_query: str, retrieved_data: Dict[str, Any]) -> str:
         - Use ONLY the provided data
         - Do NOT invent numbers or trends
         - suggestions MUST have exactly 3 items
-        - If data is insufficient or ambiguous, return:
-        {{
-            "insight": "",
-            "greeting": "",
-            "suggestions": ["", "", ""],
-            "evidence": [],
-            "confidence": 0.0
-        }}
         - Do NOT output explanations, markdown, or comments
 
         Now produce the JSON output.

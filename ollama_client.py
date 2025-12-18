@@ -23,7 +23,8 @@ def sql_query_ollama_with_client(prompt: str, model: str):
     client = Client()
 
     response = client.chat(model=model, messages=[
-        {"role": "user", "content": prompt}
+        {"role": "user", "content": prompt},
+        
     ], keep_alive='5m')
 
     raw_output = response["message"]["content"].strip()
@@ -115,11 +116,19 @@ def text_query_ollama_with_client(prompt: str, model: str):
         }
 
     # Ensure required fields exist
+    suggestions = parsed.get("suggestions", [])
+    if not isinstance(suggestions, list):
+        suggestions = []
+
+    evidence = parsed.get("evidence", [])
+    if not isinstance(evidence, list):
+        evidence = []
+
     return {
         "insight": parsed.get("insight", ""),
         "greeting": parsed.get("greeting", ""),
-        "suggestions": parsed.get("suggestions", []),
-        "evidence": parsed.get("evidence", []),
+        "suggestions": suggestions,
+        "evidence": evidence,
         # "confidence": parsed.get("confidence", 0.0),
         "sent_tokens": response.get("prompt_eval_count", 0),  # ollama token count
         "generated_tokens": response.get("eval_count", 0)  # ollama token count

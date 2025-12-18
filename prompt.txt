@@ -20,10 +20,12 @@ ROLE
         EXTRACT(), INTERVAL, DATE_SUB(), LIMIT
         8. Use TOP instead of LIMIT when required
         9. Use correct GROUP BY rules for aggregate queries
+        10. Use only the column names provided in the schema
+        11. For time-based queries, ALWAYS use date-range filtering with DATEADD + DATEDIFF and NEVER use YEAR() or MONTH() comparisons.
+
 
         DATE LOGIC RULES
-        - For “last month”, “this month”, etc., prefer date-range filtering using:
-        DATEADD + DATEDIFF
+        - For “last month”, “this month”, etc., prefer date-range filtering using DATEADD + DATEDIFF
         - Do NOT apply YEAR() or MONTH() to non-date values
 
         SCHEMA (AUTHORITATIVE — DO NOT QUESTION)
@@ -31,7 +33,7 @@ ROLE
 dbo.T_Ord_Main (Company, Years, WorkOrderNo, AO_No, Nos, stock_order, Merchandiser, Sample_Bulk, Order_Type_Export, Sales_Type, WholeSale_Retail, Order_Type, Short_Name, Buyer_Code, Buyer_Name, Po_No, Po_Date, From_CRM, Enquiry_No, Shipment_Date, Planned_Shipment_Date, Shipped_Date, Sample_Date, Sample_Sent_Date, No_Of_Items, Item_Qty, Item_Amount, Gross_Value, Tot_Tax_Value, Order_Value, BC_Code, Currency, CC_Code, CC_Value, Adv_Per, Adv_Value, Adv_Rec_Value, Adv_Amount, Adv_Rec_Amount, Bank_Code, Bank, Branch, Account_No, Swift_Code, Order_By, Buyer_Buyer, SampleYN, Responsible, Quality_Code, Shipment_Mode, Country_of_Origin, Place_of_Receipt, Pre_carriage_by, Port_Of_Loading, Country_of_Destination, Port_Of_Discharge, Final_Destination, Vessel, Quantity_Variation, Size_Variation, Consignee1, Consignee2, Consignee3, Consignee4, Consignee5, Consignee6, Consignee7, Terms_of_Delivery, Price, Payment, Lc_Days, Remarks, Description_of_Goods, Our_Bank_Code, Our_Bank, Our_Account_No, Pre_Budget_Req_Value, Pre_Budget_Allot_Value, Pre_Budget_Req_Amount, Pre_Budget_Allot_Amount, Post_Budget_Value, Post_Budget_Amount, Agent_Name, Agent_Commission, Order_Status, Shipped_Status, Sample_Sent_Status, Test_Proforma_Status, Final_Proforma_Status, Prodn_Allot_Status, Invoice_Set_Status, Approved_Status, SuperAdmin_Budget_Amount, SuperAdmin_Budget_EX_Amount_Allowed, SuperAdmin_Budget_Approval, SuperAdmin_Budget_Approval_User, Pre_Budget_Approval, Po_pdf_path, Pre_Budget_Approval_User, Approval_Request_for_SuperAdmin, Po_id, Consignee_Code, Buyer_Consignee_Code, Deliveryto_Code, Notify_Party_Code, Dis_Amount, Allotment_Approval, product_to_Product_conv, fabric_order, Division, Invoice_Amount, Bank_Branch, Workorder_To_Stock, Save_User, Cancel_User, Cancel_Date, Consignee1_gstin, Repeat_Order, Previous_WorkOrderNo, Buyers_BuyerCode, Buyers_BuyerName, Budget_Rate_Comp_Status, Budget_Rate_Update_User, Final_Packing_CompStatus, Planning_Status, Sub_Group_Type, YD_PD, Organic_Products, SO_Taxable_Value, SO_Net_Value, SO_Gross_Amount, SO_Add_Amount, SO_Sub_Amount, SO_Service_Amount, SO_Taxable_Amount, SO_Tax_Amount, SO_Roundoff_Amount, SO_Net_Amount, Freight_by, Transport_Name, Transport_Code, SO_Pack_Type, Invoice_Buyer_Code, Invoice_Buyer_Name, Edit_User, Freight_Amount, Insurance, Certificate_type, Fabric_process_type, Despatch_through, Door_Delivery, Canceled_Reason, From_SAP, Product_Summary_Not_Req, Level1_approval_user, Level2_approval_user, Level3_approval_user, Level4_approval_user, FG_Allotment, Fabric_Allotment, Weaving_Yarn_Allotment, Yarn_JW_Allotment, Fabric_JW_Allotment, FG_JW_Allotment, Trims_Allotment, PM_Allotment, Order_Register_Date, Order_Cancel_Date, Consignee8, Marketing_Manager, Agent_Commission_Uom, Notify_Buyer_Code, Notify_Buyer_Name, Shipped_Qty, Invoiced_Qty, Packed_Qty, Final_Inspected_Qty, Bulk_Approval, FOB, Washing_Details, Elongation, Fab_Testing, Insp_Report, Saleorder_Closed_Qty, Saleorder_Closed_Value, Marketing_Budget_Approval_Status, Pre_Budget_Comp_Status, Pre_Budget_Approval_Status, Marketing_Budget_Approved_User, Marketing_Budget_Approved_date, Pre_Budget_Approved_User, Pre_Budget_Approved_date, MKT_Budget_Reject_reason, Pre_Budget_Comp_User, Pre_Budget_Comp_Date, Post_Budget_Comp_Status, Post_Budget_Comp_User, Post_Budget_Comp_Date, Post_Budget_Approval_Status, Post_Budget_Approval_User, Post_Budget_Approval_Date, MKT_Approved_Amt, Pre_Budget_Approved_Amt, Post_Budget_Approved_Amt, Pre_Budget_Reject_reason, LC_Bank_Details, LC_Other_Details, LC_Name, LC_No, Entry_Date)
 
         USER QUESTION
-        How many sales orders last month give the company details? [Current date: 2025-12-18]
+        How many sale orders are there? [Current date: 2025-12-18]
 
         FINAL INSTRUCTION
         Return ONLY the final T-SQL SELECT query.
