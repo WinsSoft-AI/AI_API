@@ -1,0 +1,672 @@
+{
+  "database": "WSHTERPSDB2021",
+  "schema": "dbo",
+  "table_name": "T_Pur_Fab_Ord_Main",
+  "module": "Purchase_Fabric",
+  "table_title": "Purchase Order Master Data",
+  "table_description": "Includes detailed information about purchase orders.",
+  "priority_level": 1,
+  "row_count": 2166,
+  "columns": [
+    {
+      "name": "Company",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Years",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sub_Department",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Own_Weaving",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Stk_Pur",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Order_Type_Export",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sample_Bulk",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 24,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Supplier_Code",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Supplier_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 150,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Order_No",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Order_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Nos",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Gross_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Discount_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Gross_Discount_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Taxable_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Total_Tax_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Net_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Currency_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Payment_Terms",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Credit_Days",
+      "datatype": "int",
+      "nullable": true,
+      "max_length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    {
+      "name": "Payment_Through",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 40,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Bank_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Freight",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 80,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Freight_Charges",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Insurance",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 80,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Insurance_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Lee_Time",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Late_Ded_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Dispatch_Through",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Transport",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Destination",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Terms_Conditions",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": -1,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Advance_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 6,
+      "scale": 2
+    },
+    {
+      "name": "Advance_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Advance_Paid",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Advance_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "SGST_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "CGST_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "IGST_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Additional_Tax_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Local_Tax_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "First_Piece_Insp_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Receipt_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Inspection_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Return_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Invoice_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "RetRec_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Cancellation_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Cancellation_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Cancellation_Reason",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 400,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Cancellation_User",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 400,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Save_User",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 500,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Edit_User",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 500,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "currency_code",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 40,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Currency_Value",
+      "datatype": "float",
+      "nullable": true,
+      "max_length": null,
+      "precision": 53,
+      "scale": null
+    },
+    {
+      "name": "Cess_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Include_tax",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Branch_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Warehouse",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Po_Admin_Approval",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Payment_Paid",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "FP_Order_Main_Id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Inhouse_Settlement",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Inhouse_Settlement_No",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "order_close",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "save_user_name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Po_Admin_Approval_User",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Po_Ammend",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Po_Ammend_User",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Level1_approval_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Level2_approval_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Level3_approval_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Level4_approval_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "approval_Category",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 20,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Remarks",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 700,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Delivery_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Roundoff_Amount",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Delivery_Terms",
+      "datatype": "nvarchar",
+      "nullable": false,
+      "max_length": 150,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Approval_Reject",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Reject_Reason",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Reject_User",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    }
+  ],
+  "primary_keys": [
+    "FP_Order_Main_Id"
+  ],
+  "foreign_keys": []
+}

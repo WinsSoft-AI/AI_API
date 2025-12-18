@@ -1,0 +1,224 @@
+{
+  "database": "WSHTERPSDB2021",
+  "schema": "dbo",
+  "table_name": "T_Allot_Fabric_Stock_Summary",
+  "module": "Inventory_Fabric",
+  "table_title": "Fabric Stock Summary",
+  "table_description": "Details of fabric stock allotments and requirements.",
+  "priority_level": 3,
+  "row_count": 1447,
+  "columns": [
+    {
+      "name": "Company",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Years",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 10,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "WorkorderNo",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 80,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Product_Type",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 40,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Fabric_ArticleNo",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Fabric_ProductName",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Fabric_BarcodeNo",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 26,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Total_Qty",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Req_Qty",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "UOM",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 60,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Excess_Percent",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Allot_Stock",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Taken_Stock",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Allot_Stock_Rate",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 8,
+      "scale": 2
+    },
+    {
+      "name": "Costing_Rate",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Costing_Weight",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "PO_ID",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Design_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Entry_id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Fab_Color_Allot_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Req_Fab_Stock_Sum_Id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Stock_Issued_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Stock_Received_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Ord_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Admin_Approval",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 12,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Budgeted_Rate",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    }
+  ],
+  "primary_keys": [
+    "Req_Fab_Stock_Sum_Id"
+  ],
+  "foreign_keys": []
+}

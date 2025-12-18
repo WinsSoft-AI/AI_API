@@ -1,0 +1,1688 @@
+{
+  "database": "WSHTERPSDB2021",
+  "schema": "dbo",
+  "table_name": "T_Invoice_Main",
+  "module": "Invoice",
+  "table_title": "Sales Invoice Data",
+  "table_description": "Stores comprehensive data for sales invoices including financial and logistic details.",
+  "priority_level": 1,
+  "row_count": 2084,
+  "columns": [
+    {
+      "name": "Company",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Years",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 10,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Test_Final",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 40,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Invoice_No",
+      "datatype": "nvarchar",
+      "nullable": false,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Nos",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Invoice_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Warehouse",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sales_Type",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sales_Product",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 60,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Order_Type",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Order_Type_Export",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 12,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sample_Bulk",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 24,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Retail_WholeSale",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 60,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Rate_Chart_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Buyer_Po_No",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 1500,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Buyer_Po_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Buyer_Code",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 60,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Buyer_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 400,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sales_Man_Code",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Sales_Man_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Payment_Type",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Payment_Days",
+      "datatype": "int",
+      "nullable": true,
+      "max_length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    {
+      "name": "CCurrency_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 80,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Invoice_Currency_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 80,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "CC_Amt",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 6,
+      "scale": 2
+    },
+    {
+      "name": "Goods_Return_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Gross_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Discount_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "SPl_Discount_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Taxable_Gross_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "CGST_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "SGST_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "IGST_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Cess_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "EX_Duty_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "ST_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Duty_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Local_Tax_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Tax_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "T_Tax_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Amount1",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Amount2",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Amount3",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Amount4",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Sub_Amount1",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Sub_Amount2",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Freight_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Round_Off_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Net_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Advance_Adjusted",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Received_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Manual_Adjusted",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Receipt_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Gross_value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Discount_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "SPl_Discount_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Taxable_Gross_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "CGST_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "SGST_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "IGST_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Cess_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "EX_Duty_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "ST_Vaule",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Duty_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Local_Tax_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Tax_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "T_Tax_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Value1",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Value2",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Value3",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Value4",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Sub_Value1",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Sub_Value2",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Reason1",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Add_Reason2",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Add_Reason3",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Add_Reason4",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sub_Value1_Reason",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sub_Value2_Reason",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Freight_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Round_of_value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Net_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Advance_Adjusted_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Received_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "CreditNote_Less_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Remarks",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Save_User",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 500,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Edit_User",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 500,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "DC_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Bales_Packed_Qty",
+      "datatype": "int",
+      "nullable": true,
+      "max_length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    {
+      "name": "Bales_Packing_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Freight_By",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Mode_of_Transport",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Doucument_Through",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Dispatch_Through",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Transport_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Destination",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "LR_Number",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "No_of_Bales",
+      "datatype": "tinyint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 3,
+      "scale": 0
+    },
+    {
+      "name": "From_Bale_No",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "To_Bale_No",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Payment_After_Receipt",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Branch_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Document_Bank",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Workorderno",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 5000,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sample_Sent_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Pre_Shipment_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Post_Shipment_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Branch_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "TDS_Amt_Adjusted",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Party_Ded_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Party_Add_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Admin_Approval",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Admin_Approval_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Admin_Approval_User",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Late_payment",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Due_Days",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Sales_Ledger_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Service_Taxable_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Service_Taxable_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "GST_Export_Type",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 20,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "TCS_Code",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "TCS_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Invoice_Id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Slip_No",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Consignee_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 75,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Consignee_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Include_Tax",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "category_type",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 600,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "TCS_Per",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 5,
+      "scale": 3
+    },
+    {
+      "name": "Cancelled_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EInvoice_Gen_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EInvoice_Reference_No",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 150,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EInvoice_Cancel_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Service_Amount",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 12,
+      "scale": 4
+    },
+    {
+      "name": "Vehicle_Type",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Transporter_GSTIN",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Transport_Mode",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 5,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "LR_No",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "LR_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Vehicle_Registration_NO",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 20,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Delivery_to",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Delivery_Remarks",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 800,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EInvoice_Cancel_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "AckDt",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "AckNo",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 250,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EwbNo",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 250,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EwbDt",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EwbValidTill",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "QrCodeImage",
+      "datatype": "image",
+      "nullable": true,
+      "max_length": 2147483647,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EWB_Cancel_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "QrcodeImage_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 40,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EWB_Cancel_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Transport_Code",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Distance",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 10,
+      "scale": 2
+    },
+    {
+      "name": "sale_rate_unit",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 10,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Tot_sales_qty",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Gatepass_Outward_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Manual_Close_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Manual_Closed_User",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 250,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Manual_Close_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Manual_Close_Reason",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Other_bill_Receipts_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Shipping_Billno",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Shipping_Billdate",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Port_Code",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Nature_OfTansaction",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Delivery_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "SAP_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Level1_approval_user",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Level2_approval_user",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Level3_approval_user",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Level4_approval_user",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Is_InterCompany_Buyer",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Is_Transfer",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Is_Intercompany_Sales",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Freight_Outward_Value",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Transport_Bill_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "transport_bill_no",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Cancel_User",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 500,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Despatch_No_Combine",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": -1,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Ord_Buyer_Code",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Ord_Buyer_Name",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 250,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "consignee_Code",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Exchange_Rate",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 10,
+      "scale": 2
+    },
+    {
+      "name": "EPCG_Licence_No",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EPCG_Licence_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Proforma_Inv_No",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Proforma_Inv_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Merchandiser_Name",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Pre_carr_by",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Plc_Of_Receipt",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Port_Of_Loading",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Port_Of_Discharge",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Country_of_Destination",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 40,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Final_Destination",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Payment_Terms",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "delivery_terms",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Lc_Days",
+      "datatype": "int",
+      "nullable": false,
+      "max_length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    {
+      "name": "Cmp_Bank_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Insurance_Amt",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 10,
+      "scale": 2
+    },
+    {
+      "name": "Commission_Per",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "LC_Bank_Details",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": -1,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "LC_Other_Details",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": -1,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "LC_Name",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "LC_No",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Is_FOC",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Freight_Amount_Less",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "Cancelled_Reason",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 300,
+      "precision": null,
+      "scale": null
+    }
+  ],
+  "primary_keys": [
+    "Invoice_No"
+  ],
+  "foreign_keys": []
+}

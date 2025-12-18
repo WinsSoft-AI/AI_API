@@ -1,0 +1,920 @@
+{
+  "database": "WSHTERPSDB2021",
+  "schema": "dbo",
+  "table_name": "T_Ord_Summary",
+  "module": "Sales_Order",
+  "table_title": "Order Summary Data",
+  "table_description": "Contains detailed order summary information",
+  "priority_level": 3,
+  "row_count": 7510,
+  "columns": [
+    {
+      "name": "Company",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Years",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 5,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "WorkorderNo",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 40,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sno",
+      "datatype": "int",
+      "nullable": true,
+      "max_length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    {
+      "name": "Buyer_Code",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Buyer_Short_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Product_Type",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Cat_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 2000,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Group_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 2000,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Product_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 2000,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Product_Material",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 800,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "HSCode",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "EAN",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 30,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Barcode_No",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 800,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sample_No",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 800,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Buyer_Product_Code",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "CArticle_No",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 800,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "CArticle_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 150,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Size_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 800,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Color_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 600,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Count",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 260,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Construction",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 40,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Weave",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 40,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Season",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 20,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Weight_kg",
+      "datatype": "float",
+      "nullable": true,
+      "max_length": null,
+      "precision": 53,
+      "scale": null
+    },
+    {
+      "name": "GSM",
+      "datatype": "int",
+      "nullable": true,
+      "max_length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    {
+      "name": "Conv_Unit_name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Ord_Qty_Pcs",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Excess",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 5,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Excess_Per",
+      "datatype": "smallint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 0
+    },
+    {
+      "name": "Planned_Qty",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Alloted_Qty",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Allot_Stock",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Allot_Purchase",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Allot_Stitching",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Stitching_Allot_Rate",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Allot_Purchase_Rate",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Purchased_Rate",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Packing_Allot_Rate",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Polypack_Allot_Rate",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Cartonpack_Allot_Rate",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Final_Insp_Received",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_Inspected",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_OK",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_Reject",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_Shortage",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_Rework",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_RW_Inspected",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_RW_Ok",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_RW_Reject",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_RW_Rework",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_RW_Shortage",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Final_Insp_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Packing_Received",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Packing_Packed",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Polypacking_Packed",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 3
+    },
+    {
+      "name": "CartonPacking_Packed",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 3
+    },
+    {
+      "name": "Shipped_Qty",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 3
+    },
+    {
+      "name": "Style_id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Style_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 65,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Acc_Style_Code",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Acc_Style_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 80,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Processflow_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Process_Flow_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 800,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "TRIMS_Supply",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "PM_Supply",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Quotation_Required",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Product_Cost",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 6,
+      "scale": 2
+    },
+    {
+      "name": "QEnquiry_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "QReceipt_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "QComparision_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Polypack_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Cartonpack_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Packing_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Ord_Comp_Status",
+      "datatype": "tinyint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 3,
+      "scale": 0
+    },
+    {
+      "name": "Geneal_Paid_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Packing_Contractor_Paid_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Admin",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Admin_Pur_Finalized_Rate",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Admin_Stitch_Finalized_Rate",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Admin_Approval",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 12,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Approved_Status",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "ProductNo_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Sample_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 4000,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Po_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Ord_Id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Sale_Order_Close_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Close_Reason",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "FG_Save_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "FG_Edit_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Fabric_Save_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Fabric_Edit_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Acc_Save_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Acc_Edit_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Print_Size_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 65,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Product_Cutting_Rate",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Shade_No",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "SAM_Style",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "IE_MID",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Prodn_Packed_Qty",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Budgeted_Rate",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Stitch_Budgeted_Rate",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Sub_Group_Name",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 2000,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "TRIMS_Stock_Supply",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "PM_Stock_Supply",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sales_Return_Qty",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Is_fabric",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Ord_Reg_Id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Ord_Set_Reg_Id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Ord_Set_YN",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Ord_Set_Black",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Invoiced_Qty",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 3
+    },
+    {
+      "name": "SOrd_Taxable_Amount",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    }
+  ],
+  "primary_keys": [
+    "Ord_Id"
+  ],
+  "foreign_keys": []
+}

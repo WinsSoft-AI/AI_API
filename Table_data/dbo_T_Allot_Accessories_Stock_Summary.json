@@ -1,0 +1,168 @@
+{
+  "database": "WSHTERPSDB2021",
+  "schema": "dbo",
+  "table_name": "T_Allot_Accessories_Stock_Summary",
+  "module": "Inventory_Accessories",
+  "table_title": "Accessory Stock Summary",
+  "table_description": "Records of allotment and stock details for accessories",
+  "priority_level": 3,
+  "row_count": 1709,
+  "columns": [
+    {
+      "name": "Company",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 400,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Years",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 5,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "WorkOrderNo",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Mat_Code",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Mat_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Department",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "SUnit",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "PUnit",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Rate_Per_Unit",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Req_Stock_Qty",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 6
+    },
+    {
+      "name": "Allot_Stock_Qty",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 6
+    },
+    {
+      "name": "Taken_Stock_Qty",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 6
+    },
+    {
+      "name": "Acc_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Stock_Rate",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Req_Acc_Stk_Sum_Id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Ord_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Save_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Edit_user",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Budgeted_Rate",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    }
+  ],
+  "primary_keys": [
+    "Req_Acc_Stk_Sum_Id"
+  ],
+  "foreign_keys": []
+}

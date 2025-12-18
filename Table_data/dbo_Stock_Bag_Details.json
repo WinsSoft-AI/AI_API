@@ -1,0 +1,544 @@
+{
+  "database": "WSHTERPSDB2021",
+  "schema": "dbo",
+  "table_name": "Stock_Bag_Details",
+  "module": "Inventory_Yarn",
+  "table_title": "Inventory Details",
+  "table_description": "Stores detailed information about stock bags.",
+  "priority_level": 3,
+  "row_count": 2186,
+  "columns": [
+    {
+      "name": "Company",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Years",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 5,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "FG_Location",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 55,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Rack_Name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 55,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "GR_lot_no",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": -1,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "dye_lot_no",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": -1,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Location_Sno",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 55,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Bag_No",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Unit_Type",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 20,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sub_Wt",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 7
+    },
+    {
+      "name": "Received_Sub_Qty",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 5
+    },
+    {
+      "name": "Delivered_Sub_Qty",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 5
+    },
+    {
+      "name": "Received_Wt",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 5
+    },
+    {
+      "name": "Delivered_Wt",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 5
+    },
+    {
+      "name": "Delivery_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Ins_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Quality",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 10,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Transfer_Bag_Stock_Det_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Package_BarcodeNo",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Stock_Origin_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Stock_Prev_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Pur_Ord_Det_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Yarn_Summary_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Bag_Stock_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Bag_Stock_Det_Id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "system_name",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 150,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Rec_Dye_Tube_Qty",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Branch_Name",
+      "datatype": "nvarchar",
+      "nullable": false,
+      "max_length": 400,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Warehouse",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Item_Location",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Stock_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Stock_No",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "From_Stock_Department",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Party_Code",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 12,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Party_Name",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "WorkorderNo",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Card_No",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Yarn_Count",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 30,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Product_Type",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Color_Value",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Yarn_Color",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Mill_Name",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Bags",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Delivered_Bags",
+      "datatype": "real",
+      "nullable": false,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Pack_Type",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 20,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Empty_Pack_Wt",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 8,
+      "scale": 5
+    },
+    {
+      "name": "Sub_Unit",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 20,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Empty_Cone_Wt",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 5
+    },
+    {
+      "name": "Gross_Wt",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 5
+    },
+    {
+      "name": "Tare_Wt",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 5
+    },
+    {
+      "name": "Single_Pack_Wt",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 12,
+      "scale": 5
+    },
+    {
+      "name": "From_Bag_No",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "To_Bag_No",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Rate_Per_kg",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 5
+    },
+    {
+      "name": "CSP_Per",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Dyed_CSP_Per",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Moisture_Content_Per",
+      "datatype": "decimal",
+      "nullable": false,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Dye_Tube_Status",
+      "datatype": "bit",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Order_No",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sup_Inv_No",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 400,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Sup_Inv_Date",
+      "datatype": "datetime",
+      "nullable": false,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Pur_Order_No",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Pur_Party_Code",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Pur_Party_Name",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 250,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Remarks1",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Save_User",
+      "datatype": "varchar",
+      "nullable": false,
+      "max_length": 500,
+      "precision": null,
+      "scale": null
+    }
+  ],
+  "primary_keys": [
+    "Bag_Stock_Det_Id"
+  ],
+  "foreign_keys": []
+}

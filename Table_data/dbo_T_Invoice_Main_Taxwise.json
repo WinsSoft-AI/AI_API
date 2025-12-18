@@ -1,0 +1,456 @@
+{
+  "database": "WSHTERPSDB2021",
+  "schema": "dbo",
+  "table_name": "T_Invoice_Main_Taxwise",
+  "module": "Inventory_Madeups",
+  "table_title": "Invoice Data with Tax Details",
+  "table_description": "Contains detailed information about invoices including tax-related data.",
+  "priority_level": 1,
+  "row_count": 323,
+  "columns": [
+    {
+      "name": "Company",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 200,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Department",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Party_GSTIN",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 60,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Invoice_No",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Invoice_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Place_of_Supply",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Reverse_Charge",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 1,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "GST_Invoice_type",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "E_Commerce_GSTIN",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 60,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Export_Type",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Port_Code",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 20,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Shipping_Bill_No",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Shipping_Bill_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "GST_Percent",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Tax_Code",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 60,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Tax_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 100,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "CGST_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "SGST_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "IGST_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Cess_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "EX_Duty_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "ST_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Add_Duty_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Local_Tax_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Add_Tax_Per",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 5,
+      "scale": 2
+    },
+    {
+      "name": "Taxable_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "CGST_Amount",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "SGST_Amount",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "IGST_Amount",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Cess_Amount",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "EX_Duty_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "ST_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Duty_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Local_Tax_Amount",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Add_Tax_Amount",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Tax_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Invoice_Amount",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Taxable_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "CGST_Value",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "SGST_Value",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "IGST_Value",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Cess_Value",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "EX_Duty_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "ST_Vaule",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Add_Duty_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 12,
+      "scale": 2
+    },
+    {
+      "name": "Local_Tax_Value",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Add_Tax_Value",
+      "datatype": "real",
+      "nullable": true,
+      "max_length": null,
+      "precision": 24,
+      "scale": null
+    },
+    {
+      "name": "Invoice_Value",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "Tax_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Applicable_Per_Tax_Rate",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 8,
+      "scale": 2
+    },
+    {
+      "name": "Sale_from_Bonded_WH",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 1,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Revised_Invoice_No",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Revised_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Supply_Type",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 5,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Pur_Tax_Id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    }
+  ],
+  "primary_keys": [
+    "Pur_Tax_Id"
+  ],
+  "foreign_keys": []
+}

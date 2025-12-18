@@ -1,0 +1,200 @@
+{
+  "database": "WSHTERPSDB2021",
+  "schema": "dbo",
+  "table_name": "Accessories_Pur_Indent_Details",
+  "module": "Purchase_Accessories",
+  "table_title": "Purchase Indent Details",
+  "table_description": "Records of details for purchasing parts or accessories.",
+  "priority_level": 3,
+  "row_count": 3065,
+  "columns": [
+    {
+      "name": "Workorderno",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Indent_No",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 25,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Machine_Nos",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Category_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 140,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Group_Name",
+      "datatype": "nvarchar",
+      "nullable": true,
+      "max_length": 140,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Remarks",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Mat_Id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "From_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "To_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Req_Qty",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 15,
+      "scale": 3
+    },
+    {
+      "name": "Req_Unit",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 15,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Req_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "No_of_days",
+      "datatype": "int",
+      "nullable": true,
+      "max_length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    {
+      "name": "Consumable_qty",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 15,
+      "scale": 3
+    },
+    {
+      "name": "Consumable_unit",
+      "datatype": "varchar",
+      "nullable": true,
+      "max_length": 10,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Calculated_Days",
+      "datatype": "int",
+      "nullable": true,
+      "max_length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    {
+      "name": "Upto_Date_Requirement",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 15,
+      "scale": 3
+    },
+    {
+      "name": "Tobe_Purchased",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 15,
+      "scale": 3
+    },
+    {
+      "name": "Delivered_Qty",
+      "datatype": "decimal",
+      "nullable": true,
+      "max_length": null,
+      "precision": 15,
+      "scale": 3
+    },
+    {
+      "name": "Delivered_Date",
+      "datatype": "datetime",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Delivery_Comp_Status",
+      "datatype": "bit",
+      "nullable": true,
+      "max_length": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "Indent_id",
+      "datatype": "bigint",
+      "nullable": true,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    },
+    {
+      "name": "Indent_Det_id",
+      "datatype": "bigint",
+      "nullable": false,
+      "max_length": null,
+      "precision": 19,
+      "scale": 0
+    }
+  ],
+  "primary_keys": [
+    "Indent_Det_id"
+  ],
+  "foreign_keys": []
+}
