@@ -67,27 +67,24 @@ def generate_text_endpoint(request: TEXTRequest):
     
     # 2. Generate
     response = ollama_client.text_query_ollama_with_client(full_prompt, model=request.model_id)
+    print(response)
     
     # 3. Handle Fallback/Error
     if not response:
         return TEXTResponse(
             insight="Could not generate insights.",
             greeting="System Error",
-            suggestions=[],
-            evidence=[],
             confidence=0.0,
             sent_tokens=0,
-            generaed_tokens=0
+            generated_tokens=0
         )
         
     return TEXTResponse(
         insight=response.get("insight", ""),
         greeting=response.get("greeting", ""),
-        suggestions=response.get("suggestions", []),
-        evidence=response.get("evidence", []),
         confidence=float(response.get("confidence", 0.0)),
         sent_tokens=response.get("sent_tokens", 0),
-        generaed_tokens=response.get("generated_tokens", 0)
+        generated_tokens=response.get("generated_tokens", 0)
     )
 
 @app.get("/")

@@ -1,5 +1,4 @@
-from typing import Optional
-
+from typing import Optional, List
 class IntentParser:
     def __init__(self):
         self.INTENT_MODULE_MAP = {
@@ -75,13 +74,31 @@ class IntentParser:
             "party master": "Suppliers_Buyers"
         }
 
-    def get_intent(self, query: str) -> Optional[str]:
+    def get_intent(self, query: str) -> Optional[List[str]]:
+        """
+        Detects the business module from the query using simple substring matching.
+        Returns a list of modules (or empty list) if multiple modules match.
+        """
         query_lower = query.lower()
+
+        # Define specific terms for different inventory modules
+        inventory_keywords = ["inventory", "stock", "stock balance", "stock inward", "stock outward", "closing stock", "opening stock"]
+        
+        # List of all available inventory-related modules
+        inventory_modules = ["Inventory_Accessories", "Inventory_Yarn", "Inventory_Fabric", "Inventory_Madeups"]
+        
+        # Check for any inventory-related keywords in the query
+        if any(keyword in query_lower for keyword in inventory_keywords):
+            return inventory_modules
+
+        # Check for more specific module intents
         sorted_keys = sorted(self.INTENT_MODULE_MAP.keys(), key=len, reverse=True)
         for key in sorted_keys:
             if key in query_lower:
-                return self.INTENT_MODULE_MAP[key]
+                return [self.INTENT_MODULE_MAP[key]]
+
         return None
+
 
     def detect_role_filter(self, query: str) -> Optional[str]:
         query_lower = query.lower()

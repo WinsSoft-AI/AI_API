@@ -79,8 +79,7 @@ def text_query_ollama_with_client(prompt: str, model: str):
     client = Client()
 
     response = client.chat(model=model, messages=[
-        {"role": "user", "content": prompt}
-    ])
+        {"role": "user", "content": prompt}])#,temperature=0.0
 
     raw_output = response["message"]["content"].strip()
 
@@ -108,32 +107,22 @@ def text_query_ollama_with_client(prompt: str, model: str):
         return {
             "insight": "",
             "greeting": "",
-            "suggestions": [],
-            "evidence": [],
-            # "confidence": 0.0,
+            "confidence": 0.0,
             "sent_tokens": 0,
             "generated_tokens": 0
         }
 
-    # Ensure required fields exist
-    suggestions = parsed.get("suggestions", [])
-    if not isinstance(suggestions, list):
-        suggestions = []
 
-    evidence = parsed.get("evidence", [])
-    if not isinstance(evidence, list):
-        evidence = []
-
+    insight_val = parsed.get("insight", "")
+    if isinstance(insight_val, list):
+        insight_val = "\n".join(str(x) for x in insight_val)
+    
     return {
-        "insight": parsed.get("insight", ""),
+        "insight": str(insight_val),
         "greeting": parsed.get("greeting", ""),
-        "suggestions": suggestions,
-        "evidence": evidence,
-        # "confidence": parsed.get("confidence", 0.0),
+        "confidence": parsed.get("confidence", 0.0),
         "sent_tokens": response.get("prompt_eval_count", 0),  # ollama token count
         "generated_tokens": response.get("eval_count", 0)  # ollama token count
-
-        # "raw_output":raw_output
     }
 
 

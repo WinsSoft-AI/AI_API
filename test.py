@@ -58,7 +58,7 @@ def test_execute_sql(sql_query):
         raw_data = exec_data["data"]
         is_truncated = exec_data["is_truncated"]
         print(f"Rows Fetched: {exec_data['row_count']} (Truncated: {is_truncated})")
-        return raw_data,is_truncated
+        return raw_data
         # print("Sample Data:", json.dumps(raw_data[:1], indent=2))
     except Exception as e:
         print("Execution Error:", e)
@@ -82,7 +82,6 @@ def test_generate_text(query,raw_data,is_truncated = False):
         text_data = res_text.json()
         print(f"Insight: {text_data['insight']}")
         print(f"Greeting: {text_data['greeting']}")
-        print(f"Suggestions: {text_data['suggestions']}")
         print(f"Confidence: {text_data['confidence']}")
 
         
@@ -97,10 +96,10 @@ def main():
     # run_test("Insights - Count", "How many sales orders last month give the company details?")
     # end_time = time.time()
     # print(f"Total time taken: {end_time - start_time:.2f}s")
-    query = "How many sale orders are there?"
+    query = "How many old yarn stock are there?"
     result = run_sql_gen_test("Full Pipeline Test", query)
-    data, is_truncated = test_execute_sql(result)
-    test_generate_text(query,data,is_truncated)
+    data = test_execute_sql(result)
+    test_generate_text(query,data,is_truncated = False)
 #     test_execute_sql("""SELECT Company, COUNT(*) AS SalesOrderCount
 # FROM dbo.T_Ord_Main
 # WHERE Po_Date >= DATEADD(MONTH, -1, DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE

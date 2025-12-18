@@ -111,7 +111,7 @@ def build_text_prompt(user_query: str, retrieved_data: Dict[str, Any], is_trunca
         empty_instruction = """
         CRITICAL: The dataset is EMPTY. 
         - State clearly that "No detailed records were found for this specific query."
-        - Provide a generalized explanation or context about what this data usually represents (e.g., "Sales orders typically track customer demand...").
+        - Provide a generalized explanation or context about what this data usually represents.
         - Do NOT make up specific numbers.
         """
 
@@ -132,17 +132,14 @@ def build_text_prompt(user_query: str, retrieved_data: Dict[str, Any], is_trunca
 
         OUTPUT FORMAT (STRICT JSON ONLY):
         {{
-        "insight": "<2–3 lines. If empty, explain why/generic context. If valid, analyze data.>",
-        "greeting": "<Polite message. E.g., 'No records found' or 'Here is your summary'>",
-        "suggestions": ["<action 1>", "<action 2>", "<action 3>"],
-        "evidence": ["<key:value from data>", "..."] (Leave empty if no data),
+        "insight": "<Multiple key points each in 2–3 lines well explained and analyzed but keep the context in the ERP and the user query in mind. If empty, explain why/generic context. If valid, analyze data.>",
+        "greeting": "<Polite message. If empty, explain why/generic context. If valid, analyze data and greet for his success and motivate for his next steps. >",
         "confidence": <number between 0 and 1>
         }}
 
         STRICT RULES:
         - Use ONLY the provided data
         - Do NOT invent numbers or trends
-        - suggestions MUST have exactly 3 items
         - Do NOT output explanations, markdown, or comments
 
         Now produce the JSON output.

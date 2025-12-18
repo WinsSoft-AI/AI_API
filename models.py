@@ -36,8 +36,6 @@ class TEXTRequest(BaseModel):
 class TEXTResponse(BaseModel):
     insight: str
     greeting: str
-    suggestions: List[str]
-    evidence: List[str]
     confidence: float
     sent_tokens: int
-    generaed_tokens: int
+    generated_tokens: int

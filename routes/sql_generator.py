@@ -125,88 +125,72 @@ def extract_sql_only(text: str) -> str:
 @router.post("/generate-sql", response_model=SQLResponse)
 async def generate_sql_endpoint(request: SQLRequest):
     start_time = time.time()
-    print(f" Received User request: {request.user_query}")
+
+    print(f"Received User request: {request.user_query}")
+    
     # 1. Detect Module
-    module = INTENT_PARSER.get_intent(request.user_query)
-    if not module:
-        raise HTTPException(400, "Could not detect business module")
+    modules = INTENT_PARSER.get_intent(request.user_query)
+    if not modules:
+        raise HTTPException(status_code=400, detail="Could not detect business module")
+    
+    # 2. Retrieve Tables for all detected modules
+    selected_tables = []
+    for module in modules:
+        tables = TABLES_CACHE.get(module, [])
+        if not tables:
+            raise HTTPException(status_code=404, detail=f"No tables found for module: {module}")
+        selected_tables.extend(tables)  # Collect tables from all matched modules
 
-    tables = TABLES_CACHE.get(module, [])
-    if not tables:
-        raise HTTPException(404, f"No tables found for module: {module}")
+    # 3. Select Main Table
+    main_table = select_main_table(selected_tables)
+    final_tables = [main_table]  # Start with the main table
 
-    # 2. Select Tables
-    main_table = select_main_table(tables)
-    selected_tables = [main_table]
-
+    # 4. Check for Detail Table (if needed)
     if needs_detail_table(request.user_query):
-        for t in tables:
+        for t in selected_tables:
             if t != main_table and "detail" in t["table_name"].lower():
-                selected_tables.append(t)
-                break  # demo-safe: only one detail table
+                final_tables.append(t)
+                break  # demo-safe: only add one detail table
 
-    # 3. Build MINIMAL schema text
+    # 5. Build Schema Text
     schema_lines = []
-    for t in selected_tables:
+    for t in final_tables:
         cols = ", ".join(c["name"] for c in t.get("columns", []))
         schema_lines.append(f"{t['schema']}.{t['table_name']} ({cols})")
-
+    
     schema_text = "\n".join(schema_lines)
 
-    # 4. Prepare user query (NO SQL LOGIC LEAK)
+    # 6. Prepare User Query and Add Date Context
     final_query = request.user_query
     current_time = datetime.now().strftime("%Y-%m-%d")
     final_query += f" [Current date: {current_time}]"
 
-    # 5. Build SQL Prompt
+    # 7. Build SQL Prompt for LLM
     prompt = prompts.build_sql_prompt(final_query, schema_text)
-
-    # (Optional debug)
+    # Optional: Save prompt for debugging
     with open("prompt.txt", "w", encoding="utf-8") as f:
         f.write(prompt)
 
-    # 6. Call Ollama
-    resp = ollama_client.sql_query_ollama_with_client(
-        prompt,
-        model=request.model_id
-    )
+    # 8. Send Request to LLM (Ollama)
+    resp = ollama_client.sql_query_ollama_with_client(prompt, model=request.model_id)
+    raw_sql = resp.get("query", "").strip()
 
-    raw_sql = resp.get("query", "")
+    # 9. Extract Only SQL (Clean the LLM response)
     sql = extract_sql_only(raw_sql)
 
-
-    # 7. Apply Role Filter AFTER SQL generation
+    # 10. Apply Role Filter (if needed)
     role_filter = INTENT_PARSER.detect_role_filter(request.user_query)
     if role_filter and "T_M_Party" in sql:
-        if "where" in sql.lower():
+        if "WHERE" in sql.upper():
             sql += f" AND {role_filter}"
         else:
             sql += f" WHERE {role_filter}"
-    
-    # print(sql)
 
-
-    # 8. SQL SAFETY GUARD
+    # 11. SQL Safety Guard: Ensure SQL is valid
     if not sql.lower().startswith("select"):
         sql = f"SELECT TOP 100 * FROM {main_table['schema']}.{main_table['table_name']}"
-    
 
-    # 9. Column Validation (Schema Guard)
-    # allowed_columns = get_allowed_columns(main_table)
-
-    # used_columns = extract_column_names_from_sql(
-    #     sql,
-    #     main_table["table_name"]
-    # )
-
-    # invalid_columns = used_columns - allowed_columns
-
-    # if invalid_columns:
-    #     raise HTTPException(
-    #         status_code=400,
-    #         detail=f"Invalid column(s) detected in SQL: {', '.join(invalid_columns)}"
-    #     )
-
+    # 12. Return Final SQL and Latency Info
     latency_ms = (time.time() - start_time) * 1000
 
 
