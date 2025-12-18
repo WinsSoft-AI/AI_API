@@ -39,3 +39,17 @@ class TEXTResponse(BaseModel):
     confidence: float
     sent_tokens: int
     generated_tokens: int
+
+class InsightRequest(BaseModel):
+    user_query: str
+    model_id: str = "llama3.2:latest"
+
+class InsightResponse(BaseModel):
+    insight: str
+    greeting: str
+    sql_query: str
+    data: Optional[List[Dict[str, Any]]] = None
+    is_truncated: bool = False
+    confidence: float
+    latency_ms: float
+    error: Optional[str] = None

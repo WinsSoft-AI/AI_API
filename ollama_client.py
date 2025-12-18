@@ -104,12 +104,15 @@ def text_query_ollama_with_client(prompt: str, model: str):
     parsed = extract_json(raw_output)
 
     if parsed is None:
+    if parsed is None:
+        # Fallback: JSON parsing failed, return raw output as insight
+        print(f"JSON Parse Failed. Raw Output: {raw_output}")
         return {
-            "insight": "",
-            "greeting": "",
-            "confidence": 0.0,
-            "sent_tokens": 0,
-            "generated_tokens": 0
+            "insight": raw_output,
+            "greeting": "Here is the analysis (Raw Format)",
+            "confidence": 0.5,
+            "sent_tokens": response.get("prompt_eval_count", 0),
+            "generated_tokens": response.get("eval_count", 0)
         }
 
 

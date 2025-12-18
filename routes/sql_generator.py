@@ -122,35 +122,41 @@ def extract_sql_only(text: str) -> str:
 
 
 # ---------------- ENDPOINT ----------------
-@router.post("/generate-sql", response_model=SQLResponse)
-async def generate_sql_endpoint(request: SQLRequest):
+async def process_sql_generation(user_query: str, model_id: str) -> SQLResponse:
     start_time = time.time()
-
-    print(f"Received User request: {request.user_query}")
+    print(f"Received User request: {user_query}")
     
     # 1. Detect Module
-    modules = INTENT_PARSER.get_intent(request.user_query)
+    modules = INTENT_PARSER.get_intent(user_query)
     if not modules:
+        # Fallback or Error? Replicating endpoint behavior by raising HTTP Exception if called from endpoint, 
+        # but here we might just return error in response? 
+        # For compatibility with the endpoint which raises HTTPException, let's allow it to propagate 
+        # or handle it gracefully. The endpoint expects an exception for 400/404.
+        # But for the combined flow, we might want to catch it.
+        # Let's keep it raising HTTPException for now, caller handles it.
+        from fastapi import HTTPException
         raise HTTPException(status_code=400, detail="Could not detect business module")
     
-    # 2. Retrieve Tables for all detected modules
+    # 2. Retrieve Tables
     selected_tables = []
     for module in modules:
         tables = TABLES_CACHE.get(module, [])
         if not tables:
-            raise HTTPException(status_code=404, detail=f"No tables found for module: {module}")
-        selected_tables.extend(tables)  # Collect tables from all matched modules
+             from fastapi import HTTPException
+             raise HTTPException(status_code=404, detail=f"No tables found for module: {module}")
+        selected_tables.extend(tables)
 
     # 3. Select Main Table
     main_table = select_main_table(selected_tables)
-    final_tables = [main_table]  # Start with the main table
+    final_tables = [main_table]
 
-    # 4. Check for Detail Table (if needed)
-    if needs_detail_table(request.user_query):
+    # 4. Check for Detail Table
+    if needs_detail_table(user_query):
         for t in selected_tables:
             if t != main_table and "detail" in t["table_name"].lower():
                 final_tables.append(t)
-                break  # demo-safe: only add one detail table
+                break
 
     # 5. Build Schema Text
     schema_lines = []
@@ -160,44 +166,48 @@ async def generate_sql_endpoint(request: SQLRequest):
     
     schema_text = "\n".join(schema_lines)
 
-    # 6. Prepare User Query and Add Date Context
-    final_query = request.user_query
+    # 6. Prepare User Query
+    final_query = user_query
     current_time = datetime.now().strftime("%Y-%m-%d")
     final_query += f" [Current date: {current_time}]"
 
-    # 7. Build SQL Prompt for LLM
+    # 7. Build Prompt
     prompt = prompts.build_sql_prompt(final_query, schema_text)
-    # Optional: Save prompt for debugging
-    with open("prompt.txt", "w", encoding="utf-8") as f:
-        f.write(prompt)
+    
+    # Optional: Save prompt
+    # with open("prompt.txt", "w", encoding="utf-8") as f:
+    #     f.write(prompt)
 
-    # 8. Send Request to LLM (Ollama)
-    resp = ollama_client.sql_query_ollama_with_client(prompt, model=request.model_id)
+    # 8. Send Request to LLM
+    resp = ollama_client.sql_query_ollama_with_client(prompt, model=model_id)
     raw_sql = resp.get("query", "").strip()
 
-    # 9. Extract Only SQL (Clean the LLM response)
+    # 9. Extract Only SQL
     sql = extract_sql_only(raw_sql)
 
-    # 10. Apply Role Filter (if needed)
-    role_filter = INTENT_PARSER.detect_role_filter(request.user_query)
+    # 10. Apply Role Filter
+    role_filter = INTENT_PARSER.detect_role_filter(user_query)
     if role_filter and "T_M_Party" in sql:
         if "WHERE" in sql.upper():
             sql += f" AND {role_filter}"
         else:
             sql += f" WHERE {role_filter}"
 
-    # 11. SQL Safety Guard: Ensure SQL is valid
+    # 11. SQL Safety Guard
     if not sql.lower().startswith("select"):
         sql = f"SELECT TOP 100 * FROM {main_table['schema']}.{main_table['table_name']}"
 
-    # 12. Return Final SQL and Latency Info
+    # 12. Return Final Response
     latency_ms = (time.time() - start_time) * 1000
-
 
     return SQLResponse(
         sql_query=sql,
-        module=module,
+        module=str(modules[0]) if modules else "Unknown",
         tokens_sent=resp.get("Sent_tokens", 0),
         tokens_generated=resp.get("Generated_tokens", 0),
         latency_ms=latency_ms
     )
+
+@router.post("/generate-sql", response_model=SQLResponse)
+async def generate_sql_endpoint(request: SQLRequest):
+    return await process_sql_generation(request.user_query, request.model_id)

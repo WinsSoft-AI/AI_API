@@ -50,6 +50,70 @@ def execute_sql_endpoint(request: ExecuteSQLRequest):
         error=result.get("error")
     )
 
+from models import InsightRequest, InsightResponse
+from routes.sql_generator import process_sql_generation
+
+@app.post("/insight-generator", response_model=InsightResponse)
+async def insight_generator_endpoint(request: InsightRequest):
+    """
+    Unified endpoint: SQL Generation -> Execution -> Insight Generation.
+    """
+    total_start = __import__("time").time()
+    
+    # 1. Generate SQL
+    try:
+        sql_resp = await process_sql_generation(request.user_query, request.model_id)
+        sql_query = sql_resp.sql_query
+    except Exception as e:
+        return InsightResponse(
+            insight="Failed to understand the query.",
+            greeting="System Error",
+            sql_query="",
+            confidence=0.0,
+            latency_ms=0,
+            error=f"SQL Gen Error: {str(e)}"
+        )
+
+    # 2. Execute SQL
+    exec_result = DB_EXEC.execute_query(sql_query)
+    data = exec_result.get("data", [])
+    is_truncated = exec_result.get("is_truncated", False)
+    
+    # 3. Generate Insight
+    import prompts 
+    
+    full_prompt = prompts.build_text_prompt(
+        request.user_query, 
+        data, 
+        is_truncated=is_truncated
+    )
+    
+    llm_resp = ollama_client.text_query_ollama_with_client(full_prompt, model=request.model_id)
+    
+    total_latency = (__import__("time").time() - total_start) * 1000
+
+    if not llm_resp:
+         return InsightResponse(
+            insight="Could not analyze the data.",
+            greeting="Error",
+            sql_query=sql_query,
+            data=data,
+            is_truncated=is_truncated,
+            confidence=0.0,
+            latency_ms=total_latency,
+            error="LLM Insight Failed"
+         )
+
+    return InsightResponse(
+        insight=llm_resp.get("insight", ""),
+        greeting=llm_resp.get("greeting", ""),
+        sql_query=sql_query,
+        data=data,
+        is_truncated=is_truncated,
+        confidence=float(llm_resp.get("confidence", 0.0)),
+        latency_ms=total_latency
+    )
+
 @app.post("/generate-text", response_model=TEXTResponse)
 def generate_text_endpoint(request: TEXTRequest):
     """

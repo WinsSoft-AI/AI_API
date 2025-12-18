@@ -90,16 +90,39 @@ def test_generate_text(query,raw_data,is_truncated = False):
 
     # print(f"Total Flow Time: {time.time() - t0:.2f}s")
 
+def test_insight_generator(query):
+    print(f"\n=== Testing Unified Agent: {query} ===")
+    t0 = time.time()
+    try:
+        res = requests.post(f"{root_url}/insight-generator", json={"user_query": query})
+        if res.status_code != 200:
+            print("Failed:", res.text)
+            return
+        
+        data = res.json()
+        print(f"Status: SUCCESS (Latency: {data['latency_ms']:.2f}ms)")
+        print(f"SQL: {data['sql_query']}")
+        print(f"Greeting: {data['greeting']}")
+        print(f"Insight: {data['insight']}")
+        print(f"Data Rows: {len(data.get('data') or [])}")
+        
+    except Exception as e:
+        print("Error:", e)
+    print(f"Total Client Time: {time.time() - t0:.2f}s")
+
 def main():
     # 1. Test Aggregation (Count)
     # start_time = time.time()
     # run_test("Insights - Count", "How many sales orders last month give the company details?")
     # end_time = time.time()
     # print(f"Total time taken: {end_time - start_time:.2f}s")
-    query = "How many old yarn stock are there?"
-    result = run_sql_gen_test("Full Pipeline Test", query)
-    data = test_execute_sql(result)
-    test_generate_text(query,data,is_truncated = False)
+    
+    # query = "How many old yarn stock are there?"
+    # result = run_sql_gen_test("Full Pipeline Test", query)
+    # data = test_execute_sql(result)
+    # test_generate_text(query,data,is_truncated = False)
+
+    test_insight_generator("How many old yarn stock are there?")
 #     test_execute_sql("""SELECT Company, COUNT(*) AS SalesOrderCount
 # FROM dbo.T_Ord_Main
 # WHERE Po_Date >= DATEADD(MONTH, -1, DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE
