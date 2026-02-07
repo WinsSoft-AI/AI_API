@@ -1,7 +1,0 @@
-{
-    "model": "BAAI/bge-m3",
-    "dimension": 1024,
-    "vector_count": 628,
-    "similarity": "cosine",
-    "execution": "cpu"
-}
